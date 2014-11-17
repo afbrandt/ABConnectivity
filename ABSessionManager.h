@@ -11,7 +11,7 @@
 #import "ABAdvertiser.h"
 #import "ABBrowser.h"
 
-@interface ABSessionManager : NSObject<MCSessionDelegate>
+@interface ABSessionManager : NSObject<MCSessionDelegate, ABBrowserDelegate, ABAdvertiserDelegate>
 
 @property (nonatomic, strong) ABAdvertiser *advertiser;
 @property (nonatomic, strong) ABBrowser *browser;

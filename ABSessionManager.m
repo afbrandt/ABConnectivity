@@ -10,11 +10,37 @@
 
 @interface ABSessionManager ()
 
-
+@property (nonatomic, strong) MCSession *session;
+@property (nonatomic, strong) MCPeerID *localPeerID;
 
 @end
 
 @implementation ABSessionManager
+
+#pragma mark - Lifecycle methods
+
+- (instancetype)init {
+    self = [super init];
+    
+    if (self) {
+        self.localPeerID = [[MCPeerID alloc] initWithDisplayName:[[UIDevice currentDevice] name]];
+        self.advertiser = [ABAdvertiser new];
+        self.browser = [ABBrowser new];
+        self.session = [[MCSession alloc] initWithPeer:self.localPeerID];
+    }
+    
+    return self;
+}
+
+- (instancetype)initWithPeerID {
+    self = [super init];
+    
+    if (self) {
+        self.advertiser = [[ABAdvertiser alloc] initWithPeer:]
+    
+    }
+}
+
 
 #pragma mark - MCSessionDelegate methods
 // Remote peer changed state

@@ -12,3 +12,7 @@
 @interface ABAdvertiser : NSObject<MCNearbyServiceAdvertiserDelegate>
 
 @end
+
+@protocol ABAdvertiserDelegate <NSObject>
+
+@end

@@ -12,3 +12,7 @@
 @interface ABBrowser : NSObject<MCNearbyServiceBrowserDelegate>
 
 @end
+
+@protocol ABBrowserDelegate <NSObject>
+
+@end
