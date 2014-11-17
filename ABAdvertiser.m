@@ -6,9 +6,10 @@
 //
 //
 
-#import "ABSessionAdvertiser.h"
+#import "ABAdvertiser.h"
 
-@implementation ABSessionAdvertiser
+@implementation ABAdvertiser
+
 
 #pragma mark - MCServiceNearbyAdvertiserDelegate methods
 // Incoming invitation request.  Call the invitationHandler block with YES and a valid session to connect the inviting peer to the session.

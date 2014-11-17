@@ -9,6 +9,6 @@
 #import <Foundation/Foundation.h>
 #import <MultipeerConnectivity/MultipeerConnectivity.h>
 
-@interface ABSessionBrowser : NSObject<MCNearbyServiceBrowserDelegate>
+@interface ABBrowser : NSObject<MCNearbyServiceBrowserDelegate>
 
 @end

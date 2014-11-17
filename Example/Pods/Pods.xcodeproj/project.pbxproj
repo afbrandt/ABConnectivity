@@ -49,8 +49,8 @@
 		478CA13202D4A08BD421BD93 /* EXPMatchers+respondTo.h in Headers */ = {isa = PBXBuildFile; fileRef = 89993527D96272FD4B996D5A /* EXPMatchers+respondTo.h */; };
 		47B536775BC6BA2EEFF5A2A3 /* XCTestCase+Specta.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F64B64B1185E6314D1BA905 /* XCTestCase+Specta.h */; };
 		497F928E1A15D2D700CF230D /* ABSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 497F928D1A15D2D700CF230D /* ABSessionManager.m */; };
-		497F92911A15D73200CF230D /* ABSessionBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 497F92901A15D73200CF230D /* ABSessionBrowser.m */; };
-		497F92941A15D74600CF230D /* ABSessionAdvertiser.m in Sources */ = {isa = PBXBuildFile; fileRef = 497F92931A15D74600CF230D /* ABSessionAdvertiser.m */; };
+		497F92911A15D73200CF230D /* ABBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 497F92901A15D73200CF230D /* ABBrowser.m */; };
+		497F92941A15D74600CF230D /* ABAdvertiser.m in Sources */ = {isa = PBXBuildFile; fileRef = 497F92931A15D74600CF230D /* ABAdvertiser.m */; };
 		4A9E0032E788E1063F36175E /* EXPMatchers+raise.h in Headers */ = {isa = PBXBuildFile; fileRef = 8977C450EF58255122D09BDF /* EXPMatchers+raise.h */; };
 		4C330329B7233B77A9C40463 /* SpectaSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = EB4161E2098B9C95460CB770 /* SpectaSupport.h */; };
 		4CFBA7A7C2D48F612B1BB4C5 /* EXPFloatTuple.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DD96D0077121145C275F5EF /* EXPFloatTuple.m */; };
@@ -264,10 +264,10 @@
 		497F92891A15D2AC00CF230D /* ABConnectivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABConnectivity.h; sourceTree = "<group>"; };
 		497F928C1A15D2D700CF230D /* ABSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABSessionManager.h; sourceTree = "<group>"; };
 		497F928D1A15D2D700CF230D /* ABSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABSessionManager.m; sourceTree = "<group>"; };
-		497F928F1A15D73200CF230D /* ABSessionBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABSessionBrowser.h; sourceTree = "<group>"; };
-		497F92901A15D73200CF230D /* ABSessionBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABSessionBrowser.m; sourceTree = "<group>"; };
-		497F92921A15D74600CF230D /* ABSessionAdvertiser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABSessionAdvertiser.h; sourceTree = "<group>"; };
-		497F92931A15D74600CF230D /* ABSessionAdvertiser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABSessionAdvertiser.m; sourceTree = "<group>"; };
+		497F928F1A15D73200CF230D /* ABBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABBrowser.h; sourceTree = "<group>"; };
+		497F92901A15D73200CF230D /* ABBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABBrowser.m; sourceTree = "<group>"; };
+		497F92921A15D74600CF230D /* ABAdvertiser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABAdvertiser.h; sourceTree = "<group>"; };
+		497F92931A15D74600CF230D /* ABAdvertiser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABAdvertiser.m; sourceTree = "<group>"; };
 		49F2430F4292CEDF1C8FD800 /* EXPBlockDefinedMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPBlockDefinedMatcher.m; path = src/EXPBlockDefinedMatcher.m; sourceTree = "<group>"; };
 		4CE764DFA45B56401F81F4DD /* EXPMatchers+respondTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+respondTo.m"; path = "src/matchers/EXPMatchers+respondTo.m"; sourceTree = "<group>"; };
 		4D7637C87761A047614123CE /* EXPMatchers+beFalsy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beFalsy.h"; path = "src/matchers/EXPMatchers+beFalsy.h"; sourceTree = "<group>"; };
@@ -467,10 +467,10 @@
 			children = (
 				610D762F7EA26A9D86F2677E /* Support Files */,
 				497F92891A15D2AC00CF230D /* ABConnectivity.h */,
-				497F92921A15D74600CF230D /* ABSessionAdvertiser.h */,
-				497F92931A15D74600CF230D /* ABSessionAdvertiser.m */,
-				497F928F1A15D73200CF230D /* ABSessionBrowser.h */,
-				497F92901A15D73200CF230D /* ABSessionBrowser.m */,
+				497F92921A15D74600CF230D /* ABAdvertiser.h */,
+				497F92931A15D74600CF230D /* ABAdvertiser.m */,
+				497F928F1A15D73200CF230D /* ABBrowser.h */,
+				497F92901A15D73200CF230D /* ABBrowser.m */,
 				497F928C1A15D2D700CF230D /* ABSessionManager.h */,
 				497F928D1A15D2D700CF230D /* ABSessionManager.m */,
 			);
@@ -1202,8 +1202,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				497F92911A15D73200CF230D /* ABSessionBrowser.m in Sources */,
-				497F92941A15D74600CF230D /* ABSessionAdvertiser.m in Sources */,
+				497F92911A15D73200CF230D /* ABBrowser.m in Sources */,
+				497F92941A15D74600CF230D /* ABAdvertiser.m in Sources */,
 				497F928E1A15D2D700CF230D /* ABSessionManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

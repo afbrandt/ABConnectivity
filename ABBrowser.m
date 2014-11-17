@@ -6,9 +6,9 @@
 //
 //
 
-#import "ABSessionBrowser.h"
+#import "ABBrowser.h"
 
-@implementation ABSessionBrowser
+@implementation ABBrowser
 
 #pragma mark - MCNearbyServiceBrowserDelegate methods
 

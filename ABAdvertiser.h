@@ -9,6 +9,6 @@
 #import <Foundation/Foundation.h>
 #import <MultipeerConnectivity/MultipeerConnectivity.h>
 
-@interface ABSessionAdvertiser : NSObject<MCNearbyServiceAdvertiserDelegate>
+@interface ABAdvertiser : NSObject<MCNearbyServiceAdvertiserDelegate>
 
 @end

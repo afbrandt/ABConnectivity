@@ -8,6 +8,12 @@
 
 #import "ABSessionManager.h"
 
+@interface ABSessionManager ()
+
+
+
+@end
+
 @implementation ABSessionManager
 
 #pragma mark - MCSessionDelegate methods
