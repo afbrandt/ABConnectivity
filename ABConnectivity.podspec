@@ -10,7 +10,7 @@
 Pod::Spec.new do |s|
   s.name             = "ABConnectivity"
   s.version          = "0.1.0"
-  s.summary          = "A short description of ABConnectivity."
+  s.summary          = "A simple iOS adhoc connection library."
   s.description      = <<-DESC
                        An optional longer description of ABConnectivity
 
@@ -33,6 +33,6 @@ Pod::Spec.new do |s|
   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  # s.frameworks = 'UIKit', 'MapKit', 'MultipeerConnectivity'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
