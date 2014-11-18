@@ -16,9 +16,17 @@
     
     if (self) {
         _browser = [[MCNearbyServiceBrowser alloc] initWithPeer:peer.peerID serviceType:name];
+        _browser.delegate = self;
     }
-    
     return self;
+}
+
+- (void)browse {
+    [self.browser startBrowsingForPeers];
+}
+
+- (void)stop {
+    [self.browser stopBrowsingForPeers];
 }
 
 #pragma mark - MCNearbyServiceBrowserDelegate methods
@@ -33,12 +41,10 @@
 
 // A nearby peer has stopped advertising
 - (void)browser:(MCNearbyServiceBrowser *)browser lostPeer:(MCPeerID *)peerID {
-
 }
 
 // Browsing did not start due to an error
 - (void)browser:(MCNearbyServiceBrowser *)browser didNotStartBrowsingForPeers:(NSError *)error {
-
 }
 
 @end
