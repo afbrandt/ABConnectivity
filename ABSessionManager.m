@@ -36,9 +36,11 @@
     self = [super init];
     
     if (self) {
-        self.advertiser = [[ABAdvertiser alloc] initWithPeer:]
+        //self.advertiser = [[ABAdvertiser alloc] initWithPeer:]
     
     }
+    
+    return self;
 }
 
 

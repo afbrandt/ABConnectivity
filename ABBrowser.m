@@ -10,6 +10,15 @@
 
 @implementation ABBrowser
 
+- (instancetype)init {
+    self = [super init];
+    
+    if (self) {
+    }
+    
+    return self;
+}
+
 #pragma mark - MCNearbyServiceBrowserDelegate methods
 
 // Found a nearby advertising peer

@@ -12,7 +12,9 @@
     #define _ABCONNECTIVITY_
 
     #import "ABSessionManager.h"
+    #import "ABSession.h"
+    #import "ABPeer";
 
-    #import "ABSessionAdvertiser.h"
-    #import "ABSessionBrowser.h"
+    #import "ABAdvertiser.h"
+    #import "ABBrowser.h"
 #endif

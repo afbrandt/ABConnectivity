@@ -8,10 +8,14 @@
 
 #import <Foundation/Foundation.h>
 #import <MultipeerConnectivity/MultipeerConnectivity.h>
+@protocol ABBrowserDelegate;
 
 @interface ABBrowser : NSObject<MCNearbyServiceBrowserDelegate>
 
+@property (weak, nonatomic) id<ABBrowserDelegate> delegate;
+
 @end
+
 
 @protocol ABBrowserDelegate <NSObject>
 

@@ -51,6 +51,8 @@
 		497F928E1A15D2D700CF230D /* ABSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 497F928D1A15D2D700CF230D /* ABSessionManager.m */; };
 		497F92911A15D73200CF230D /* ABBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 497F92901A15D73200CF230D /* ABBrowser.m */; };
 		497F92941A15D74600CF230D /* ABAdvertiser.m in Sources */ = {isa = PBXBuildFile; fileRef = 497F92931A15D74600CF230D /* ABAdvertiser.m */; };
+		49EB9A001A1ABC33006DC851 /* ABSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EB99FF1A1ABC33006DC851 /* ABSession.m */; };
+		49EB9A031A1AC025006DC851 /* ABPeer.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EB9A021A1AC025006DC851 /* ABPeer.m */; };
 		4A9E0032E788E1063F36175E /* EXPMatchers+raise.h in Headers */ = {isa = PBXBuildFile; fileRef = 8977C450EF58255122D09BDF /* EXPMatchers+raise.h */; };
 		4C330329B7233B77A9C40463 /* SpectaSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = EB4161E2098B9C95460CB770 /* SpectaSupport.h */; };
 		4CFBA7A7C2D48F612B1BB4C5 /* EXPFloatTuple.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DD96D0077121145C275F5EF /* EXPFloatTuple.m */; };
@@ -268,6 +270,10 @@
 		497F92901A15D73200CF230D /* ABBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABBrowser.m; sourceTree = "<group>"; };
 		497F92921A15D74600CF230D /* ABAdvertiser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABAdvertiser.h; sourceTree = "<group>"; };
 		497F92931A15D74600CF230D /* ABAdvertiser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABAdvertiser.m; sourceTree = "<group>"; };
+		49EB99FE1A1ABC33006DC851 /* ABSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABSession.h; sourceTree = "<group>"; };
+		49EB99FF1A1ABC33006DC851 /* ABSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABSession.m; sourceTree = "<group>"; };
+		49EB9A011A1AC025006DC851 /* ABPeer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABPeer.h; sourceTree = "<group>"; };
+		49EB9A021A1AC025006DC851 /* ABPeer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABPeer.m; sourceTree = "<group>"; };
 		49F2430F4292CEDF1C8FD800 /* EXPBlockDefinedMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPBlockDefinedMatcher.m; path = src/EXPBlockDefinedMatcher.m; sourceTree = "<group>"; };
 		4CE764DFA45B56401F81F4DD /* EXPMatchers+respondTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+respondTo.m"; path = "src/matchers/EXPMatchers+respondTo.m"; sourceTree = "<group>"; };
 		4D7637C87761A047614123CE /* EXPMatchers+beFalsy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beFalsy.h"; path = "src/matchers/EXPMatchers+beFalsy.h"; sourceTree = "<group>"; };
@@ -471,6 +477,10 @@
 				497F92931A15D74600CF230D /* ABAdvertiser.m */,
 				497F928F1A15D73200CF230D /* ABBrowser.h */,
 				497F92901A15D73200CF230D /* ABBrowser.m */,
+				49EB9A011A1AC025006DC851 /* ABPeer.h */,
+				49EB9A021A1AC025006DC851 /* ABPeer.m */,
+				49EB99FE1A1ABC33006DC851 /* ABSession.h */,
+				49EB99FF1A1ABC33006DC851 /* ABSession.m */,
 				497F928C1A15D2D700CF230D /* ABSessionManager.h */,
 				497F928D1A15D2D700CF230D /* ABSessionManager.m */,
 			);
@@ -1203,8 +1213,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				497F92911A15D73200CF230D /* ABBrowser.m in Sources */,
+				49EB9A001A1ABC33006DC851 /* ABSession.m in Sources */,
 				497F92941A15D74600CF230D /* ABAdvertiser.m in Sources */,
 				497F928E1A15D2D700CF230D /* ABSessionManager.m in Sources */,
+				49EB9A031A1AC025006DC851 /* ABPeer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1310,7 +1322,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
@@ -1382,7 +1394,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
