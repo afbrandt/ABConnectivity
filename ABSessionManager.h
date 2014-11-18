@@ -12,10 +12,15 @@
 #import "ABBrowser.h"
 #import "ABSession.h"
 
-@interface ABSessionManager : NSObject<MCSessionDelegate, ABBrowserDelegate, ABAdvertiserDelegate>
+
+@interface ABSessionManager : NSObject
 
 @property (nonatomic, strong) ABAdvertiser *advertiser;
 @property (nonatomic, strong) ABBrowser *browser;
+@property (nonatomic, strong) ABPeer *peer;
+@property (nonatomic, strong) NSMutableArray *sessions;
+
+- (instancetype)initWithPeer: (ABPeer *)peer;
 
 - (ABSession *)createSessionWithServiceName: (NSString *)name;
 

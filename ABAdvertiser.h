@@ -18,6 +18,9 @@
 
 - (instancetype)initWithPeer:(ABPeer *)peer serviceName:(NSString *)name;
 
+- (void)advertise;
+- (void)stop;
+
 @end
 
 @protocol ABAdvertiserDelegate <NSObject>

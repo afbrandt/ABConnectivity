@@ -18,9 +18,14 @@
 
 - (instancetype)initWithPeer:(ABPeer *)peer serviceName:(NSString *)name;
 
+- (void)browse;
+- (void)stop;
+
 @end
 
-
 @protocol ABBrowserDelegate <NSObject>
+
+- (BOOL)shouldInvitePeer: (ABPeer *)peer;
+- (void)invitePeer: (ABPeer *)peer;
 
 @end

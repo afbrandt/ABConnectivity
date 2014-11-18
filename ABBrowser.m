@@ -25,7 +25,10 @@
 
 // Found a nearby advertising peer
 - (void)browser:(MCNearbyServiceBrowser *)browser foundPeer:(MCPeerID *)peerID withDiscoveryInfo:(NSDictionary *)info {
-
+    ABPeer *peer = [[ABPeer alloc] initWithPeerID:peerID discoveryInfo:info];
+    if ([self.delegate shouldInvitePeer:peer]) {
+        [self.delegate invitePeer:peer];
+    }
 }
 
 // A nearby peer has stopped advertising

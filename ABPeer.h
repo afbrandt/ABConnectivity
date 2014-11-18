@@ -12,7 +12,12 @@
 @interface ABPeer : NSObject
 
 @property (readonly, nonatomic) MCPeerID *peerID;
-@property (readonly, nonatomic) NSDictionary *info;
-@property (readonly, nonatomic) MCSessionState connnectionState;
+@property (assign, nonatomic) MCSessionState connnectionState;
+@property (strong, nonatomic) NSDictionary *info;
 
+- (instancetype)initWithName:(NSString *)name;
+- (instancetype)initWithName:(NSString *)name discoveryInfo:(NSDictionary *)info;
+
+- (instancetype)initWithPeerID:(MCPeerID *)peerID;
+- (instancetype)initWithPeerID:(MCPeerID *)peerID discoveryInfo:(NSDictionary *)info;
 @end

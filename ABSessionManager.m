@@ -10,37 +10,27 @@
 
 @interface ABSessionManager ()
 
-@property (nonatomic, strong) MCSession *session;
-@property (nonatomic, strong) MCPeerID *localPeerID;
-
 @end
 
 @implementation ABSessionManager
 
 #pragma mark - Lifecycle methods
 
-- (instancetype)init {
+- (instancetype)initWithPeer:(ABPeer *)peer {
     self = [super init];
     
     if (self) {
-        self.localPeerID = [[MCPeerID alloc] initWithDisplayName:[[UIDevice currentDevice] name]];
-        self.advertiser = [ABAdvertiser new];
-        self.browser = [ABBrowser new];
-        self.session = [[MCSession alloc] initWithPeer:self.localPeerID];
+        _sessions = [NSMutableArray array];
+        _peer = peer;
     }
     
     return self;
 }
 
-- (instancetype)initWithPeerID {
-    self = [super init];
-    
-    if (self) {
-        //self.advertiser = [[ABAdvertiser alloc] initWithPeer:]
-    
-    }
-    
-    return self;
+- (ABSession *)createSessionWithServiceName:(NSString *)name {
+    ABSession *session = [[ABSession alloc] initWithPeer:self.peer serviceName:name];
+    [self.sessions addObject:session];
+    return session;
 }
 
 
