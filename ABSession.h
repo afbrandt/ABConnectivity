@@ -22,4 +22,6 @@
 
 - (void)connectToPeersWithMax:(NSInteger)number progressBlock:(void (^)(ABPeer *peer))progress completionBlock:(void (^)(NSArray *peers))complete;
 
+- (void)allowDataWithCallback:
+
 @end
