@@ -7,9 +7,19 @@
 //
 
 #import "ABAdvertiser.h"
+#import "ABPeer.h"
 
 @implementation ABAdvertiser
 
+- (instancetype)initWithPeer:(ABPeer *)peer serviceName: (NSString *)name{
+    self = [super init];
+    
+    if (self) {
+        _advertiser = [[MCNearbyServiceAdvertiser alloc] initWithPeer:peer.peerID discoveryInfo:peer.info serviceType:name];
+    }
+    
+    return self;
+}
 
 #pragma mark - MCServiceNearbyAdvertiserDelegate methods
 // Incoming invitation request.  Call the invitationHandler block with YES and a valid session to connect the inviting peer to the session.

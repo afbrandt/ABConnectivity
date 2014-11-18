@@ -7,13 +7,15 @@
 //
 
 #import "ABBrowser.h"
+#import "ABPeer.h"
 
 @implementation ABBrowser
 
-- (instancetype)init {
+- (instancetype)initWithPeer:(ABPeer *)peer serviceName: (NSString *)name{
     self = [super init];
     
     if (self) {
+        _browser = [[MCNearbyServiceBrowser alloc] initWithPeer:peer.peerID serviceType:name];
     }
     
     return self;

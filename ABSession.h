@@ -13,10 +13,10 @@
 
 @interface ABSession : NSObject<ABBrowserDelegate, ABAdvertiserDelegate>
 
-@property (strong, nonatomic) ABAdvertiser *advertiser;
-@property (strong, nonatomic) ABBrowser *browser;
+@property (readonly, strong, nonatomic) ABAdvertiser *advertiser;
+@property (readonly, strong, nonatomic) ABBrowser *browser;
+@property (readonly, strong, nonatomic) NSString *serviceName;
 @property (strong, nonatomic) NSArray *peers;
-@property (readonly, nonatomic) NSString *serviceName;
 
 - (void)connectToPeersWithMax:(NSInteger)number progressBlock:(void (^)(ABPeer *peer))progress completionBlock:(void (^)(NSArray *peers))complete;
 

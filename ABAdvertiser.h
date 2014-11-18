@@ -8,14 +8,17 @@
 
 #import <Foundation/Foundation.h>
 #import <MultipeerConnectivity/MultipeerConnectivity.h>
+@class ABPeer;
 @protocol ABAdvertiserDelegate;
 
 @interface ABAdvertiser : NSObject<MCNearbyServiceAdvertiserDelegate>
 
+@property (readonly, strong, nonatomic) MCNearbyServiceAdvertiser *advertiser;
 @property (weak, nonatomic) id<ABAdvertiserDelegate> delegate;
 
-@end
+- (instancetype)initWithPeer:(ABPeer *)peer serviceName:(NSString *)name;
 
+@end
 
 @protocol ABAdvertiserDelegate <NSObject>
 
