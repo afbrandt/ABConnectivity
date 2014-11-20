@@ -25,7 +25,7 @@
 
 @protocol ABAdvertiserDelegate <NSObject>
 
-- (BOOL)shouldInvitePeer:(ABPeer *)peer;
-- (void)invitePeer:(ABPeer *)peer withHandler:(void(^)(BOOL accept, MCSession *session))invitationHandler;
+- (BOOL)shouldAcceptInviteWithPeer:(ABPeer *)peer;
+- (void)acceptInviteWithPeer:(ABPeer *)peer withHandler:(void(^)(BOOL accept, MCSession *session))invitationHandler;
 
 @end

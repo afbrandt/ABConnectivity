@@ -35,8 +35,8 @@
 - (void)advertiser:(MCNearbyServiceAdvertiser *)advertiser didReceiveInvitationFromPeer:(MCPeerID *)peerID withContext:(NSData *)context invitationHandler:(void(^)(BOOL accept, MCSession *session))invitationHandler {
     NSDictionary *info = [NSKeyedUnarchiver unarchiveObjectWithData:context];
     ABPeer *peer = [[ABPeer alloc] initWithPeerID:peerID discoveryInfo:info];
-    if ([self.delegate shouldInvitePeer:peer]) {
-        [self.delegate invitePeer:peer withHandler:invitationHandler];
+    if ([self.delegate shouldAcceptInviteWithPeer:peer]) {
+        [self.delegate acceptInviteWithPeer:peer withHandler:invitationHandler];
     }
 }
 

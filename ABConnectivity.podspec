@@ -32,7 +32,7 @@ Pod::Spec.new do |s|
     'ABConnectivity' => ['Pod/Assets/*.png']
   }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit', 'MultipeerConnectivity'
+  s.public_header_files = 'Pod/Classes/**/*.h'
+  s.frameworks = 'MultipeerConnectivity'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
