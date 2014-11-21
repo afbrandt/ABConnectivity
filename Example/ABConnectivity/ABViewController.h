@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+@class ABSession;
 
 @interface ABViewController : UIViewController
+
+@property (strong, nonatomic) ABSession *session;
 
 @end

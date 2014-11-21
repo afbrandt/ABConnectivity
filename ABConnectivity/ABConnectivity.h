@@ -13,7 +13,7 @@
 
     #import "ABSessionManager.h"
     #import "ABSession.h"
-    #import "ABPeer";
+    #import "ABPeer.h"
 
     #import "ABAdvertiser.h"
     #import "ABBrowser.h"

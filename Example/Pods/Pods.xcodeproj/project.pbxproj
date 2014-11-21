@@ -48,11 +48,11 @@
 		4385F8D2F9C5223DD24BB753 /* EXPMatchers+endWith.h in Headers */ = {isa = PBXBuildFile; fileRef = 28447F29EA9B53FC2EDB08F3 /* EXPMatchers+endWith.h */; };
 		478CA13202D4A08BD421BD93 /* EXPMatchers+respondTo.h in Headers */ = {isa = PBXBuildFile; fileRef = 89993527D96272FD4B996D5A /* EXPMatchers+respondTo.h */; };
 		47B536775BC6BA2EEFF5A2A3 /* XCTestCase+Specta.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F64B64B1185E6314D1BA905 /* XCTestCase+Specta.h */; };
-		497F928E1A15D2D700CF230D /* ABSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 497F928D1A15D2D700CF230D /* ABSessionManager.m */; };
-		497F92911A15D73200CF230D /* ABBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 497F92901A15D73200CF230D /* ABBrowser.m */; };
-		497F92941A15D74600CF230D /* ABAdvertiser.m in Sources */ = {isa = PBXBuildFile; fileRef = 497F92931A15D74600CF230D /* ABAdvertiser.m */; };
-		49EB9A001A1ABC33006DC851 /* ABSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EB99FF1A1ABC33006DC851 /* ABSession.m */; };
-		49EB9A031A1AC025006DC851 /* ABPeer.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EB9A021A1AC025006DC851 /* ABPeer.m */; };
+		49CCAF6B1A1FF87100B26704 /* ABAdvertiser.m in Sources */ = {isa = PBXBuildFile; fileRef = 49CCAF611A1FF87100B26704 /* ABAdvertiser.m */; };
+		49CCAF6C1A1FF87100B26704 /* ABBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 49CCAF631A1FF87100B26704 /* ABBrowser.m */; };
+		49CCAF6D1A1FF87100B26704 /* ABPeer.m in Sources */ = {isa = PBXBuildFile; fileRef = 49CCAF661A1FF87100B26704 /* ABPeer.m */; };
+		49CCAF6E1A1FF87100B26704 /* ABSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 49CCAF681A1FF87100B26704 /* ABSession.m */; };
+		49CCAF6F1A1FF87100B26704 /* ABSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 49CCAF6A1A1FF87100B26704 /* ABSessionManager.m */; };
 		4A9E0032E788E1063F36175E /* EXPMatchers+raise.h in Headers */ = {isa = PBXBuildFile; fileRef = 8977C450EF58255122D09BDF /* EXPMatchers+raise.h */; };
 		4C330329B7233B77A9C40463 /* SpectaSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = EB4161E2098B9C95460CB770 /* SpectaSupport.h */; };
 		4CFBA7A7C2D48F612B1BB4C5 /* EXPFloatTuple.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DD96D0077121145C275F5EF /* EXPFloatTuple.m */; };
@@ -263,17 +263,17 @@
 		452BCB35FD40841CA35A2C44 /* XCTestLog+Specta.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "XCTestLog+Specta.m"; path = "src/XCTestLog+Specta.m"; sourceTree = "<group>"; };
 		46447CA86FF0A5F09930B133 /* libPods-Tests-Expecta.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests-Expecta.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		47C798960B5E07DA316208EC /* Pods-ABConnectivity-ABConnectivity-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ABConnectivity-ABConnectivity-prefix.pch"; sourceTree = "<group>"; };
-		497F92891A15D2AC00CF230D /* ABConnectivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABConnectivity.h; sourceTree = "<group>"; };
-		497F928C1A15D2D700CF230D /* ABSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABSessionManager.h; sourceTree = "<group>"; };
-		497F928D1A15D2D700CF230D /* ABSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABSessionManager.m; sourceTree = "<group>"; };
-		497F928F1A15D73200CF230D /* ABBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABBrowser.h; sourceTree = "<group>"; };
-		497F92901A15D73200CF230D /* ABBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABBrowser.m; sourceTree = "<group>"; };
-		497F92921A15D74600CF230D /* ABAdvertiser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABAdvertiser.h; sourceTree = "<group>"; };
-		497F92931A15D74600CF230D /* ABAdvertiser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABAdvertiser.m; sourceTree = "<group>"; };
-		49EB99FE1A1ABC33006DC851 /* ABSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABSession.h; sourceTree = "<group>"; };
-		49EB99FF1A1ABC33006DC851 /* ABSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABSession.m; sourceTree = "<group>"; };
-		49EB9A011A1AC025006DC851 /* ABPeer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABPeer.h; sourceTree = "<group>"; };
-		49EB9A021A1AC025006DC851 /* ABPeer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABPeer.m; sourceTree = "<group>"; };
+		49CCAF601A1FF87100B26704 /* ABAdvertiser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ABAdvertiser.h; path = ABConnectivity/ABAdvertiser.h; sourceTree = "<group>"; };
+		49CCAF611A1FF87100B26704 /* ABAdvertiser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ABAdvertiser.m; path = ABConnectivity/ABAdvertiser.m; sourceTree = "<group>"; };
+		49CCAF621A1FF87100B26704 /* ABBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ABBrowser.h; path = ABConnectivity/ABBrowser.h; sourceTree = "<group>"; };
+		49CCAF631A1FF87100B26704 /* ABBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ABBrowser.m; path = ABConnectivity/ABBrowser.m; sourceTree = "<group>"; };
+		49CCAF641A1FF87100B26704 /* ABConnectivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ABConnectivity.h; path = ABConnectivity/ABConnectivity.h; sourceTree = "<group>"; };
+		49CCAF651A1FF87100B26704 /* ABPeer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ABPeer.h; path = ABConnectivity/ABPeer.h; sourceTree = "<group>"; };
+		49CCAF661A1FF87100B26704 /* ABPeer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ABPeer.m; path = ABConnectivity/ABPeer.m; sourceTree = "<group>"; };
+		49CCAF671A1FF87100B26704 /* ABSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ABSession.h; path = ABConnectivity/ABSession.h; sourceTree = "<group>"; };
+		49CCAF681A1FF87100B26704 /* ABSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ABSession.m; path = ABConnectivity/ABSession.m; sourceTree = "<group>"; };
+		49CCAF691A1FF87100B26704 /* ABSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ABSessionManager.h; path = ABConnectivity/ABSessionManager.h; sourceTree = "<group>"; };
+		49CCAF6A1A1FF87100B26704 /* ABSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ABSessionManager.m; path = ABConnectivity/ABSessionManager.m; sourceTree = "<group>"; };
 		49F2430F4292CEDF1C8FD800 /* EXPBlockDefinedMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPBlockDefinedMatcher.m; path = src/EXPBlockDefinedMatcher.m; sourceTree = "<group>"; };
 		4CE764DFA45B56401F81F4DD /* EXPMatchers+respondTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+respondTo.m"; path = "src/matchers/EXPMatchers+respondTo.m"; sourceTree = "<group>"; };
 		4D7637C87761A047614123CE /* EXPMatchers+beFalsy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beFalsy.h"; path = "src/matchers/EXPMatchers+beFalsy.h"; sourceTree = "<group>"; };
@@ -471,18 +471,18 @@
 		058CF01452007E926B88A6B7 /* ABConnectivity */ = {
 			isa = PBXGroup;
 			children = (
+				49CCAF601A1FF87100B26704 /* ABAdvertiser.h */,
+				49CCAF611A1FF87100B26704 /* ABAdvertiser.m */,
+				49CCAF621A1FF87100B26704 /* ABBrowser.h */,
+				49CCAF631A1FF87100B26704 /* ABBrowser.m */,
+				49CCAF641A1FF87100B26704 /* ABConnectivity.h */,
+				49CCAF651A1FF87100B26704 /* ABPeer.h */,
+				49CCAF661A1FF87100B26704 /* ABPeer.m */,
+				49CCAF671A1FF87100B26704 /* ABSession.h */,
+				49CCAF681A1FF87100B26704 /* ABSession.m */,
+				49CCAF691A1FF87100B26704 /* ABSessionManager.h */,
+				49CCAF6A1A1FF87100B26704 /* ABSessionManager.m */,
 				610D762F7EA26A9D86F2677E /* Support Files */,
-				497F92891A15D2AC00CF230D /* ABConnectivity.h */,
-				497F92921A15D74600CF230D /* ABAdvertiser.h */,
-				497F92931A15D74600CF230D /* ABAdvertiser.m */,
-				497F928F1A15D73200CF230D /* ABBrowser.h */,
-				497F92901A15D73200CF230D /* ABBrowser.m */,
-				49EB9A011A1AC025006DC851 /* ABPeer.h */,
-				49EB9A021A1AC025006DC851 /* ABPeer.m */,
-				49EB99FE1A1ABC33006DC851 /* ABSession.h */,
-				49EB99FF1A1ABC33006DC851 /* ABSession.m */,
-				497F928C1A15D2D700CF230D /* ABSessionManager.h */,
-				497F928D1A15D2D700CF230D /* ABSessionManager.m */,
 			);
 			name = ABConnectivity;
 			path = ../..;
@@ -1212,11 +1212,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				497F92911A15D73200CF230D /* ABBrowser.m in Sources */,
-				49EB9A001A1ABC33006DC851 /* ABSession.m in Sources */,
-				497F92941A15D74600CF230D /* ABAdvertiser.m in Sources */,
-				497F928E1A15D2D700CF230D /* ABSessionManager.m in Sources */,
-				49EB9A031A1AC025006DC851 /* ABPeer.m in Sources */,
+				49CCAF6B1A1FF87100B26704 /* ABAdvertiser.m in Sources */,
+				49CCAF6E1A1FF87100B26704 /* ABSession.m in Sources */,
+				49CCAF6F1A1FF87100B26704 /* ABSessionManager.m in Sources */,
+				49CCAF6D1A1FF87100B26704 /* ABPeer.m in Sources */,
+				49CCAF6C1A1FF87100B26704 /* ABBrowser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
